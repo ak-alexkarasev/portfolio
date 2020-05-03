@@ -1256,6 +1256,7 @@ body {
 }
 
 .mask {
+  display: none;
   position: absolute;
   height: 100%;
   width: 100%;
