@@ -7,7 +7,8 @@
     <title>Business</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="dist/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="dist/fancybox/jquery.fancybox.min.css">
+    <!-- <link rel="stylesheet" href="dist/fancybox/jquery.fancybox.min.css"> -->
+    <link rel="stylesheet" href="dist/magnific-popup/magnific-popup.css">
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -200,7 +201,7 @@
               <div class="works__item_image">
                 <img src="img/works/work_1.jpg" alt="">
               </div>
-              <a href="img/works/work_big-1.jpg" data-fancybox="gallery" class="works__item_link">
+              <a href="img/works/work_big-1.jpg" class="works__item_link image-link">
                 <i class="fab fa-telegram-plane"></i>
                 <div class="works__item_title">Project Name</div>
                 <div class="works__item_subtle">Facebook marketing</div>
@@ -210,7 +211,7 @@
               <div class="works__item_image">
                 <img src="img/works/work_2.jpg" alt="">
               </div>
-              <a href="img/works/work_big-2.jpg" data-fancybox="gallery" class="works__item_link">
+              <a href="img/works/work_big-2.jpg" class="works__item_link image-link">
                 <i class="fab fa-telegram-plane"></i>
                 <div class="works__item_title">Project Name</div>
                 <div class="works__item_subtle">Facebook marketing</div>
@@ -220,7 +221,7 @@
               <div class="works__item_image">
                 <img src="img/works/work_3.jpg" alt="">
               </div>
-              <a href="img/works/work_big-3.jpg" data-fancybox="gallery" class="works__item_link">
+              <a href="img/works/work_big-3.jpg" class="works__item_link image-link">
                 <i class="fab fa-telegram-plane"></i>
                 <div class="works__item_title">Project Name</div>
                 <div class="works__item_subtle">Landing Page</div>
@@ -230,7 +231,7 @@
               <div class="works__item_image">
                 <img src="img/works/work_4.jpg" alt="">
               </div>
-              <a href="img/works/work_big-4.jpg" data-fancybox="gallery" class="works__item_link">
+              <a href="img/works/work_big-4.jpg" class="works__item_link image-link">
                 <i class="fab fa-telegram-plane"></i>
                 <div class="works__item_title">Project Name</div>
                 <div class="works__item_subtle">Landing Page</div>
@@ -240,7 +241,7 @@
               <div class="works__item_image">
                 <img src="img/works/work_5.jpg" alt="">
               </div>
-              <a href="img/works/work_big-5.jpg" data-fancybox="gallery" class="works__item_link">
+              <a href="img/works/work_big-5.jpg" class="works__item_link image-link">
                 <i class="fab fa-telegram-plane"></i>
                 <div class="works__item_title">Project Name</div>
                 <div class="works__item_subtle">Facebook marketing</div>
@@ -250,7 +251,7 @@
               <div class="works__item_image">
                 <img src="img/works/work_6.jpg" alt="">
               </div>
-              <a href="img/works/work_big-6.jpg" data-fancybox="gallery" class="works__item_link">
+              <a href="img/works/work_big-6.jpg" class="works__item_link image-link">
                 <i class="fab fa-telegram-plane"></i>
                 <div class="works__item_title">Project Name</div>
                 <div class="works__item_subtle">Facebook marketing</div>
@@ -260,7 +261,7 @@
               <div class="works__item_image">
                 <img src="img/works/work_7.jpg" alt="">
               </div>
-              <a href="img/works/work_big-7.jpg" data-fancybox="gallery" class="works__item_link">
+              <a href="img/works/work_big-7.jpg" class="works__item_link image-link">
                 <i class="fab fa-telegram-plane"></i>
                 <div class="works__item_title">Project Name</div>
                 <div class="works__item_subtle">Landing Page</div>
@@ -270,7 +271,7 @@
               <div class="works__item_image">
                 <img src="img/works/work_8.jpg" alt="">
               </div>
-              <a href="img/works/work_big-8.jpg" data-fancybox="gallery" class="works__item_link">
+              <a href="img/works/work_big-8.jpg" class="works__item_link image-link">
                 <i class="fab fa-telegram-plane"></i>
                 <div class="works__item_title">Project Name</div>
                 <div class="works__item_subtle">Landing Page</div>
@@ -366,10 +367,26 @@
           <p><a href="#">ssauthor.com</a> © 2020 All Rights Reserved</p>
         </div>
       </div>
+      <!-- <div class="popup-fade">
+        <div class="popup">
+          <a class="popup-close" href="#">Закрыть</a>
+          <div class="popup__body">
+            <img class="popup-img" src="img/works/work_big-8.jpg" alt="">
+          </div>
+        </div>    
+      </div> -->
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="../dist/fancybox/jquery.fancybox.min.js"></script>
+    <!-- <script src="../dist/fancybox/jquery.fancybox.min.js"></script> -->
+    <!-- <script src="../dist/lightbox/mini-lightbox.min.js"></script> -->
+    <script src="dist/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.image-link').magnificPopup({type:'image'});
+      });
+    </script>
     <script src="js/main.js"></script>
+    
   </body>
 </html>
 
